@@ -54,6 +54,9 @@
     .services-heading p{
         font-size: 1rem !important;
     }
+    .services-card{
+        padding:unset !important;
+    }
     
 }
 @media (max-width: 568px) {

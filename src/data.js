@@ -55,3 +55,29 @@ export const aboutCards = [
     src: "img/icon/power.png",
   },
 ];
+
+// servicesCard
+
+export const servicesCards = [
+  {
+    subTitle: "Services",
+    title: "Technology Solutions",
+    description:
+      "We specialize in developing cutting-edge technology solutions to help organizations improve their efficiency, reduce costs, and enhance customer experiences.",
+    src: "img/icon/power.png",
+  },
+  {
+    subTitle: "Services",
+    title: "Healthcare Solutions",
+    description:
+      "Sidbot's expertise extends beyond technology to help healthcare organizations improve patient outcomes, reduce costs, and enhance staffing efficiency.",
+    src: "img/icon/power.png",
+  },
+  {
+    subTitle: "Services",
+    title: "Finance Solutions",
+    description:
+      "Sidbot's expertise spans across various industries, including finance, to help organizations manage their finances more effectively and achieve their financial goals.",
+    src: "img/icon/power.png",
+  },
+];

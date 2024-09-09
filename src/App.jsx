@@ -3,6 +3,7 @@ import { Home } from "./Components/Home";
 import ClientLogoImg from "./Components/ClientLogo";
 import AboutUs from "./Components/AboutUs";
 import { ServicesHeading } from "./Components/ServicesHeading.jsx";
+import ServicesCard from "./Components/ServicesCard.jsx";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <ClientLogoImg />
       <AboutUs />
       <ServicesHeading />
+      <ServicesCard />
     </>
   );
 };
