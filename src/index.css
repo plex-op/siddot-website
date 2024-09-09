@@ -44,6 +44,17 @@
     .client-logo{
         margin-top: 5rem !important;
     }
+    /* services-heading */
+    .services-heading span{
+        font-size: 1.1rem !important;
+    }
+    .services-heading h2{
+        font-size: 2rem !important;
+    }
+    .services-heading p{
+        font-size: 1rem !important;
+    }
+    
 }
 @media (max-width: 568px) {
     .home-container{
