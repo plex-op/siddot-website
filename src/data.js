@@ -61,23 +61,23 @@ export const aboutCards = [
 export const servicesCards = [
   {
     subTitle: "Services",
-    title: "Technology Solutions",
+    title: "Digital Marketing",
     description:
-      "We specialize in developing cutting-edge technology solutions to help organizations improve their efficiency, reduce costs, and enhance customer experiences.",
+      "We offer comprehensive digital marketing solutions that help organizations enhance their online presence, engage customers, and drive business growth.",
     src: "img/icon/power.png",
   },
   {
     subTitle: "Services",
-    title: "Healthcare Solutions",
+    title: "Content Creation",
     description:
-      "Sidbot's expertise extends beyond technology to help healthcare organizations improve patient outcomes, reduce costs, and enhance staffing efficiency.",
+      "Our content creation services focus on producing engaging, high-quality content that resonates with your target audience and strengthens your brand’s voice.",
     src: "img/icon/power.png",
   },
   {
     subTitle: "Services",
-    title: "Finance Solutions",
+    title: "Photo and Videography",
     description:
-      "Sidbot's expertise spans across various industries, including finance, to help organizations manage their finances more effectively and achieve their financial goals.",
+      "We specialize in professional photo and videography services, capturing moments that tell your story and elevate your brand’s visual identity.",
     src: "img/icon/power.png",
   },
 ];
