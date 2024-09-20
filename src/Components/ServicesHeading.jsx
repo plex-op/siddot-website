@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-export const ServicesHeading = () => {
+export const ServicesHeading = ({ title, main, span, description }) => {
   return (
-    <Container className="mt-5 vh-100 d-flex justify-content-center align-items-center">
+    <Container className="mt-5  vh-0-md vh-0-sm d-flex justify-content-center align-items-center">
       <div className="text-center mb-5 services-heading">
         <span
           style={{
@@ -12,20 +12,21 @@ export const ServicesHeading = () => {
             marginBottom: "1.5rem",
           }}
         >
-          OUR SERVICES
+          {title}
         </span>
         <h2
           style={{
             fontWeight: "800",
-            fontSize: "3.375rem",
+            fontSize: "2rem",
             maxWidth: "580px",
             margin: "0 auto",
             marginBottom: "1rem",
           }}
         >
-          For Every Problem, <span>There's a Solution</span>
+          {main}
+          {span}
         </h2>
-        <p
+        {/* <p
           style={{
             fontWeight: "500",
             fontSize: "1.1rem",
@@ -33,9 +34,8 @@ export const ServicesHeading = () => {
             margin: "0 auto",
           }}
         >
-          Our services are tailor-made to your needs, aligning our strategy with
-          your requirements.
-        </p>
+          {description}
+        </p> */}
       </div>
     </Container>
   );

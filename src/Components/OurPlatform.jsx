@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { servicesCards } from "../data";
+import { OurPlatformData } from "../data.jsx";
 
-function ServicesCard() {
+export function OurPlatform() {
   const [bgColor, setBgColor] = useState("white");
 
   useEffect(() => {
@@ -38,8 +38,8 @@ function ServicesCard() {
         padding: "20px",
       }}
     >
-      <Container className="mb-5">
-        {servicesCards.map((data, index) => (
+      <Container className="mb-5 gap-10">
+        {OurPlatformData.map((data, index) => (
           <Row key={index}>
             <Col xs={12} md={12}>
               <Card
@@ -51,7 +51,7 @@ function ServicesCard() {
                   outline: "none",
                   border: "none",
                 }}
-                className="services-card"
+                className="services-card mb-5"
               >
                 <Card.Body className="d-flex align-items-center">
                   <Col md={9}>
@@ -61,19 +61,22 @@ function ServicesCard() {
                     >
                       {data.subTitle}
                     </Card.Subtitle>
-                    <Card.Title style={{ fontSize: "28px", fontWeight: "800" }}>
+                    <Card.Title style={{ fontSize: "", fontWeight: "800" }}>
                       {data.title}
                     </Card.Title>
                     <Card.Text style={{ fontSize: "18px", fontWeight: "400" }}>
                       {data.description}
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
+                    <Card.Link href="#" className="service-btn">
+                      Card Link
+                    </Card.Link>
+                    {/* <button className="service-btn mt-5">Click Link</button> */}
                   </Col>
                   <Col
                     md={3}
                     className="d-none d-sm-flex justify-content-center align-items-center"
                   >
-                    <img src={data.src} alt="" width={"100px"} />
+                    <img src={data.src} alt="" width={"200px"} />
                   </Col>
                 </Card.Body>
               </Card>
@@ -85,4 +88,4 @@ function ServicesCard() {
   );
 }
 
-export default ServicesCard;
+// export default OurPlatform;

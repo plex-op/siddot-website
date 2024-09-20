@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { aboutCards } from "../data";
+import { serviceCards } from "../data.jsx";
 
-function AboutUs() {
+function ServiceCard() {
   const [bgColor, setBgColor] = useState("white"); // Default background color
 
   // Handle scroll event
@@ -35,6 +35,7 @@ function AboutUs() {
       style={{
         backgroundColor: bgColor,
         transition: "background-color 0.5s ease",
+        padding: "10px",
       }}
     >
       <Container className="mt-5">
@@ -47,21 +48,21 @@ function AboutUs() {
               marginBottom: "1.5rem",
             }}
           >
-            WHY HYRE
+            OUR SERVICE
           </Card.Text>
           <Card.Text
             as="h2"
             style={{
               fontWeight: "800",
-              fontSize: "3.375rem",
+              fontSize: "2rem",
               maxWidth: "580px",
               margin: "0 auto",
               marginBottom: "1rem",
             }}
           >
-            This is How We Get <span>Things Done</span>
+            For Every Problem,There's a Solution
           </Card.Text>
-          <Card.Text
+          {/* <Card.Text
             as="p"
             style={{
               fontWeight: "500",
@@ -73,13 +74,13 @@ function AboutUs() {
             We work with the most innovative companies, adding a fresh approach
             to the hiring strategy. Building and scaling teams? That's what we
             do best!
-          </Card.Text>
+          </Card.Text> */}
         </div>
         <Row>
-          {aboutCards.map((data, index) => (
+          {serviceCards.map((data, index) => (
             <Col
               key={index}
-              md={4}
+              md={3}
               className="mb-4 d-flex justify-content-center"
             >
               <Card
@@ -98,17 +99,21 @@ function AboutUs() {
                     src={data.src}
                     alt={data.imgAlt}
                     className="img-fluid mb-3" // You can adjust the class for styling, e.g. margin-bottom
-                    style={{ maxWidth: "100px", height: "auto" }} // Optional inline styling for responsiveness
+                    style={{ maxWidth: "70px", height: "auto" }} // Optional inline styling for responsiveness
                   />
                   <Card.Title
                     as="h3"
-                    style={{ fontSize: "24px", fontWeight: "700" }}
+                    style={{ fontSize: "20px", fontWeight: "700" }}
                   >
                     {data.title}
                   </Card.Title>
                   <Card.Text
                     as="p"
-                    style={{ fontSize: "18px", fontWeight: "400" }}
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      textAlign: "justify",
+                    }}
                   >
                     {data.description}
                   </Card.Text>
@@ -122,4 +127,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default ServiceCard;

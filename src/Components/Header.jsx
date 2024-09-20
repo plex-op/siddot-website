@@ -71,13 +71,13 @@ function Header() {
                   Home
                 </Nav.Link>
                 <Nav.Link href="#link" style={{ color: "" }}>
-                  Services
-                </Nav.Link>
-                <Nav.Link href="#link" style={{ color: "" }}>
                   About
                 </Nav.Link>
                 <Nav.Link href="#link" style={{ color: "" }}>
-                  Our Works
+                  Services
+                </Nav.Link>
+                <Nav.Link href="#link" style={{ color: "" }}>
+                  Our Platform
                 </Nav.Link>
                 <Nav.Link href="#footer" style={{ color: "" }}>
                   Contact
