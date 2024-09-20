@@ -5,18 +5,21 @@ function Header() {
   const [navbarColor, setNavbarColor] = useState("transparent");
 
   const handleScroll = () => {
-    if (window.screenY > 50) {
-      setNavbarColor("black");
+    if (window.scrollY > 50) {
+      // Corrected from screenY to scrollY
+      setNavbarColor("white");
     } else {
       setNavbarColor("transparent");
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <Navbar
@@ -33,22 +36,19 @@ function Header() {
             style={{
               color: "black",
               fontSize: "30px",
-              fontFamily: "kreadon-extrabold",
             }}
             className="navbar-content nav-bar-section"
           >
             {/* <img src="" alt="" /> */}
-            Logo
-            <span style={{ color: "#ff7b00", fontFamily: "kreadon-bold" }}>
-              IMG
-            </span>
+            SID
+            <span style={{ color: "#ff7b00" }}>DOT</span>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="offcanvasNavbar"
             style={{
               color: "white",
               filter: "invert(1)",
-              background: "transparent",
+              background: "white",
               border: "none", // Remove toggle outline
               outline: "none", // Extra measure to ensure no outline
               boxShadow: "none", // Remove focus outline
@@ -60,23 +60,22 @@ function Header() {
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
             style={{ background: "black" }} // Offcanvas background color
-            // style={{ backgroundColor: "black" }}
           >
             <Offcanvas.Header closeButton style={{ filter: "invert(1)" }}>
               <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#home" style={{ color: "" }}>
+                <Nav.Link href="#" style={{ color: "" }}>
                   Home
                 </Nav.Link>
-                <Nav.Link href="#link" style={{ color: "" }}>
+                <Nav.Link href="#about-section" style={{ color: "" }}>
                   About
                 </Nav.Link>
-                <Nav.Link href="#link" style={{ color: "" }}>
+                <Nav.Link href="#service-section" style={{ color: "" }}>
                   Services
                 </Nav.Link>
-                <Nav.Link href="#link" style={{ color: "" }}>
+                <Nav.Link href="#platform-section" style={{ color: "" }}>
                   Our Platform
                 </Nav.Link>
                 <Nav.Link href="#footer" style={{ color: "" }}>
@@ -90,4 +89,5 @@ function Header() {
     </>
   );
 }
+
 export default Header;

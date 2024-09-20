@@ -9,6 +9,7 @@ export const Home = () => {
           <Col xs={12} md={8} className="home-content">
             <h1>
               Searching for a Star?
+              <br />
               <span
               // style={{
               //   backgroundImage:

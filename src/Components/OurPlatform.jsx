@@ -30,7 +30,7 @@ export function OurPlatform() {
 
   return (
     <div
-      id="about-section"
+      id="platform-section"
       style={{
         backgroundColor: bgColor, // Apply background color based on scroll
         transition: "background-color 0.3s ease", // Smooth transition for background change

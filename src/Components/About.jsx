@@ -60,7 +60,7 @@ function About() {
               marginBottom: "1rem",
             }}
           >
-            This is How We Get Things Done
+            This is How <br />   We Get Things Done
           </Card.Text>
         </div>
         <Row>

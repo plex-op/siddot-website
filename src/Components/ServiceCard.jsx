@@ -31,7 +31,7 @@ function ServiceCard() {
 
   return (
     <div
-      id="about-section"
+      id="service-section"
       style={{
         backgroundColor: bgColor,
         transition: "background-color 0.5s ease",
@@ -60,7 +60,8 @@ function ServiceCard() {
               marginBottom: "1rem",
             }}
           >
-            For Every Problem,There's a Solution
+            For Every Problem, <br />
+            There's a Solution
           </Card.Text>
           {/* <Card.Text
             as="p"
@@ -103,14 +104,14 @@ function ServiceCard() {
                   />
                   <Card.Title
                     as="h3"
-                    style={{ fontSize: "20px", fontWeight: "700" }}
+                    style={{ fontSize: "18px", fontWeight: "700" }}
                   >
                     {data.title}
                   </Card.Title>
                   <Card.Text
                     as="p"
                     style={{
-                      fontSize: "16px",
+                      fontSize: "14px",
                       fontWeight: "400",
                       textAlign: "justify",
                     }}

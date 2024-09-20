@@ -1,6 +1,5 @@
-// import { OurPlatform } from "./Components/OurPlatform";
-import { HowWeWork } from "./Components/HowWeWork";
 import { OurPlatform } from "./Components/OurPlatform";
+import { Contact } from "./Components/Contact";
 
 export const clientLogo = [
   {
@@ -97,7 +96,7 @@ export const headingData = [
     span: "Talent For Your Team.",
     description:
       " Our services are tailor-made to your needs, aligning our strategy with your requirements.",
-    component: <HowWeWork />,
+    component: <Contact />,
   },
 ];
 // servicesCard
