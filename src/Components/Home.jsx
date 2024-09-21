@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 export const Home = () => {
   return (
-    <section className="home-section" style={{ marginTop: "4rem" }}>
+    <section id="#" style={{ marginTop: "4rem" }}>
       <Container className="vh-100 d-flex flex-column">
         <Row className="flex-grow-1 align-items-center home-container">
           <Col xs={12} md={8} className="home-content">

@@ -91,11 +91,8 @@ export const headingData = [
   },
 
   {
-    title: "HOW WE WORK",
-    main: "Effortlessly Hire The Right",
-    span: "Talent For Your Team.",
-    description:
-      " Our services are tailor-made to your needs, aligning our strategy with your requirements.",
+    title: "CONTACT",
+    main: "Let’s Build Together.",
     component: <Contact />,
   },
 ];

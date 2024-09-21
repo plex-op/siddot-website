@@ -78,7 +78,7 @@ function Header() {
                 <Nav.Link href="#platform-section" style={{ color: "" }}>
                   Our Platform
                 </Nav.Link>
-                <Nav.Link href="#footer" style={{ color: "" }}>
+                <Nav.Link href="#contact-section" style={{ color: "" }}>
                   Contact
                 </Nav.Link>
               </Nav>
