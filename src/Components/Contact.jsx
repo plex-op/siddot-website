@@ -32,7 +32,7 @@ export const Contact = () => {
                   <RiWhatsappFill
                     style={{ fontSize: "30px", marginRight: "10px" }}
                   />
-                  +91 9791845198
+                 +91 123456789
                 </p>
                 <p
                   className="d-flex align-items-center"
@@ -52,8 +52,7 @@ export const Contact = () => {
                     wordWrap: "break-word",
                   }}
                 >
-                  Cybersoft Digital Media Pvt Ltd No D82, EB COLONY,
-                  Mayiladuthurai road, Thiruvarur 610002
+               lorem
                 </p>
               </div>
             </div>
